@@ -7,30 +7,43 @@ body{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    background-image: url('./img/img1.jpg');
+    background-color: #dccc;
     height: 100vh;
     background-position: center;
     background-size: cover;
     flex-direction: column;
 }
+.overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(-355deg, rgba(255, 0, 0, 0.267), rgba(245, 78, 12, 0.884))
+}
 button{
     padding: 8px 24px;
     text-transform: uppercase;
     border: none;
+    z-index: 300;
     margin: 15px 0;
     font-weight: 100;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgb(255, 102, 0);
+    background-color: rgb(70, 67, 64);
     outline: none;
-    color: rgb(238, 229, 229);
+    color: rgba(189, 178, 173, 0.884);
 }
 .time{
-    color: rgb(226, 213, 213);
+    color: rgba(189, 178, 173, 0.884);
     padding: 20px 15px;
     margin: 15px 0;
-    background-color: rgb(255, 102, 0);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(70, 67, 64);
+    font-family: 'Dancing Script', cursive;
     text-align: center;
+    line-height: 2;
     display: none;
+    z-index: 300;
     max-width: 200px;
 }
